@@ -8,7 +8,7 @@ import '../../providers/library_provider.dart';
 import '../../providers/player_provider.dart';
 import '../../providers/playlist_provider.dart';
 import '../../widgets/album_art.dart';
-import '../../widgets/cadence_scaffold.dart';
+import '../../widgets/Zenova_scaffold.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/song_actions_sheet.dart';
 import '../../widgets/song_tile.dart';
@@ -24,14 +24,14 @@ class PlaylistDetailScreen extends StatelessWidget {
     final theme = Theme.of(context);
 
     if (playlist == null) {
-      return const CadenceScaffold(
+      return const ZenovaScaffold(
         body: EmptyState(icon: Icons.queue_music_rounded, title: 'Playlist not found', message: ''),
       );
     }
 
     final songs = playlistProvider.songsFor(playlist);
 
-    return CadenceScaffold(
+    return ZenovaScaffold(
       appBar: AppBar(
         title: Text(playlist.name, maxLines: 1, overflow: TextOverflow.ellipsis),
         actions: [

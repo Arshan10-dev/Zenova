@@ -81,7 +81,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 ),
               ),
               const SizedBox(height: 24),
-              Text('Cadence',
+              Text('Zenova',
                   style: TextStyle(
                       fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: -0.5, color: Colors.white.withValues(alpha: 0.95))),
               const SizedBox(height: 6),

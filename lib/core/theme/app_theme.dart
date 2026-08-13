@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../constants/app_colors.dart';
 
-/// Builds Cadence's three theme variants (light / dark / AMOLED) from a
+/// Builds Zenova's three theme variants (light / dark / AMOLED) from a
 /// single accent seed color, so switching accent in Settings re-derives a
 /// full, consistent Material 3 ColorScheme rather than patching one color.
 class AppTheme {

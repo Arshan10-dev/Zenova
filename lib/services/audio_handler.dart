@@ -14,16 +14,16 @@ class PositionData {
   const PositionData(this.position, this.bufferedPosition, this.duration);
 }
 
-/// Cadence's single AudioHandler. QueueHandler gives us default
+/// Zenova's single AudioHandler. QueueHandler gives us default
 /// queue-manipulation behavior; SeekHandler gives us fast-forward/rewind
 /// built on top of [seek].
-class CadenceAudioHandler extends BaseAudioHandler with QueueHandler, SeekHandler {
+class ZenovaAudioHandler extends BaseAudioHandler with QueueHandler, SeekHandler {
   final AudioPlayer player = AudioPlayer();
   final ConcatenatingAudioSource _playlist = ConcatenatingAudioSource(children: []);
 
   List<String> _queueSongIds = [];
 
-  CadenceAudioHandler() {
+  ZenovaAudioHandler() {
     _init();
   }
 

@@ -213,7 +213,7 @@ class _SongsScreenState extends State<SongsScreen> {
       context: context,
       builder: (dialogContext) => AlertDialog(
         title: const Text('Remove from Library?'),
-        content: Text('${library.selectedIds.length} song(s) will be removed from Cadence. This won\'t delete the files from your device.'),
+        content: Text('${library.selectedIds.length} song(s) will be removed from Zenova. This won\'t delete the files from your device.'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(dialogContext), child: const Text('Cancel')),
           FilledButton(

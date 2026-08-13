@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../providers/playlist_provider.dart';
 import '../../widgets/add_to_playlist_sheet.dart';
-import '../../widgets/cadence_scaffold.dart';
+import '../../widgets/Zenova_scaffold.dart';
 import '../../widgets/empty_state.dart';
 import 'playlist_detail_screen.dart';
 
@@ -15,7 +15,7 @@ class PlaylistsScreen extends StatelessWidget {
     final playlists = context.watch<PlaylistProvider>().playlists;
     final theme = Theme.of(context);
 
-    return CadenceScaffold(
+    return ZenovaScaffold(
       appBar: AppBar(title: const Text('Playlists')),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => _createPlaylist(context),

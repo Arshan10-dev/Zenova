@@ -77,7 +77,7 @@ class _PermissionScreenState extends State<PermissionScreen> with WidgetsBinding
               Text('Access your music', style: theme.textTheme.headlineSmall, textAlign: TextAlign.center),
               const SizedBox(height: 12),
               Text(
-                'Cadence needs permission to see the audio files stored on your phone so it can build your library. '
+                'Zenova needs permission to see the audio files stored on your phone so it can build your library. '
                 'Everything stays on this device — nothing is ever uploaded.',
                 textAlign: TextAlign.center,
                 style: theme.textTheme.bodyMedium?.copyWith(color: scheme.onSurfaceVariant, height: 1.5),

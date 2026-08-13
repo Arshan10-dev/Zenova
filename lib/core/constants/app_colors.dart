@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Cadence's palette. Kept as a small, named set rather than scattering hex
+/// Zenova's palette. Kept as a small, named set rather than scattering hex
 /// values through the widget tree — see AppTheme for how these become a
 /// full Material 3 ColorScheme.
 class AppColors {

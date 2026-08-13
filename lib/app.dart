@@ -19,9 +19,9 @@ import 'services/music_scanner_service.dart';
 /// Root widget: wires repositories -> providers once, then hands off to
 /// SplashScreen. [audioHandler] is created once in main() (audio_service
 /// requires this) and threaded down into PlayerProvider here.
-class CadenceApp extends StatelessWidget {
-  final CadenceAudioHandler audioHandler;
-  const CadenceApp({super.key, required this.audioHandler});
+class ZenovaApp extends StatelessWidget {
+  final ZenovaAudioHandler audioHandler;
+  const ZenovaApp({super.key, required this.audioHandler});
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class CadenceApp extends StatelessWidget {
       child: Consumer<ThemeProvider>(
         builder: (context, themeProvider, _) {
           return MaterialApp(
-            title: 'Cadence',
+            title: 'Zenova',
             debugShowCheckedModeBanner: false,
             themeMode: themeProvider.themeMode,
             theme: AppTheme.light(themeProvider.accentColor),

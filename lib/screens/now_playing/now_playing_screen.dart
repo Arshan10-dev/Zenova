@@ -380,7 +380,7 @@ void _showLyricsPlaceholder(BuildContext context) {
               Text('Lyrics aren\'t available yet', style: theme.textTheme.titleMedium),
               const SizedBox(height: 8),
               Text(
-                'Cadence is fully offline and doesn\'t fetch lyrics from the internet. This spot is reserved for a future update.',
+                'Zenova is fully offline and doesn\'t fetch lyrics from the internet. This spot is reserved for a future update.',
                 textAlign: TextAlign.center,
                 style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
               ),

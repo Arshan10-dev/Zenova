@@ -17,7 +17,7 @@ class ArtworkService {
   static Future<Directory> _ensureArtDir() async {
     if (_artDir != null) return _artDir!;
     final tempDir = await getTemporaryDirectory();
-    final dir = Directory('${tempDir.path}/cadence_artwork');
+    final dir = Directory('${tempDir.path}/Zenova_artwork');
     if (!await dir.exists()) {
       await dir.create(recursive: true);
     }

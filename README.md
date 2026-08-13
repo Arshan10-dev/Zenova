@@ -1,4 +1,4 @@
-# Cadence — Offline Music Player (Flutter)
+# Zenova — Offline Music Player (Flutter)
 
 A premium, offline-first Android music player built with Flutter and Material 3:
 automatic library scanning, manual import, background playback with full
@@ -58,7 +58,7 @@ change the `@HiveField`s on `SongModel` or `PlaylistModel`.
 
 ### Fully-offline typography (optional)
 
-Cadence uses `google_fonts` for its Sora/Inter type pairing, which fetches
+Zenova uses `google_fonts` for its Sora/Inter type pairing, which fetches
 the font files from Google's CDN the first time each is used, then caches
 them. That's the only thing in the app that touches the network — playback,
 your library, playlists, and favorites are 100% local. If you'd rather the
@@ -114,7 +114,7 @@ lib/
 Straight down the stack: **screens** read/call **providers**, **providers**
 call **repositories** and **services**, **repositories** are the only thing
 that touches Hive directly. `PlayerProvider` wraps the single
-`CadenceAudioHandler` and also exposes its streams directly, so widgets can
+`ZenovaAudioHandler` and also exposes its streams directly, so widgets can
 either use provider getters or `StreamBuilder` on `player.playbackStateStream`
 / `positionDataStream` for anything that needs to update every frame (seek
 bar, mini player progress) without over-notifying the rest of the tree.
@@ -140,12 +140,12 @@ album art (`palette_generator`) for a subtle animated background tint.
 ## Known simplifications (by design, not oversights)
 
 - **"Remove from Library" never touches the file on disk** — it only removes
-  Cadence's reference to it. Actually deleting a user's file from shared
+  Zenova's reference to it. Actually deleting a user's file from shared
   storage on Android 10+ requires an interactive OS confirmation
   (`MediaStore.createDeleteRequest`), which felt out of scope for a library
   action; this keeps it fast, safe, and reversible via rescan.
 - **Lyrics is an explicit placeholder**, per the brief — it opens a sheet
-  explaining lyrics aren't fetched (Cadence has no lyrics API/network
+  explaining lyrics aren't fetched (Zenova has no lyrics API/network
   dependency by design).
 - **Queue reordering** is supported inside Playlists (drag to reorder) and
   Queue (swipe to remove, tap to jump); dragging to reorder the *live playback

@@ -26,7 +26,7 @@ if (hasReleaseKeystore) {
 }
 
 android {
-    namespace "com.cadence.player"
+    namespace "com.Zenova.player"
     compileSdk 36
     ndkVersion flutter.ndkVersion
 
@@ -41,7 +41,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.cadence.player"
+        applicationId "com.Zenova.player"
         // Android 10 (API 29) through Android 16 (API 36), per the brief.
         minSdk 29
         targetSdk 36

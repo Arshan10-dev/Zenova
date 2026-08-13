@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cadence'),
+        title: const Text('Zenova'),
         actions: [
           IconButton(
             icon: const Icon(Icons.search_rounded),

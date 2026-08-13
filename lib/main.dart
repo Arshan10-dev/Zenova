@@ -12,7 +12,7 @@ import 'services/permission_service.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Edge-to-edge, transparent system bars — Cadence draws its own
+  // Edge-to-edge, transparent system bars — Zenova draws its own
   // backgrounds behind the status/nav bar areas on every screen.
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -25,10 +25,10 @@ Future<void> main() async {
   await HiveService.init();
 
   final audioHandler = await AudioService.init(
-    builder: () => CadenceAudioHandler(),
+    builder: () => ZenovaAudioHandler(),
     config: const AudioServiceConfig(
-      androidNotificationChannelId: 'com.cadence.player.audio',
-      androidNotificationChannelName: 'Cadence Playback',
+      androidNotificationChannelId: 'com.Zenova.player.audio',
+      androidNotificationChannelName: 'Zenova Playback',
       androidNotificationOngoing: true,
       androidStopForegroundOnPause: true,
       preloadArtwork: false,
@@ -39,5 +39,5 @@ Future<void> main() async {
   // foreground service rather than blocking playback.
   unawaited(PermissionService.requestNotificationPermissionIfNeeded());
 
-  runApp(CadenceApp(audioHandler: audioHandler));
+  runApp(ZenovaApp(audioHandler: audioHandler));
 }

@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../providers/library_provider.dart';
 import '../../providers/player_provider.dart';
-import '../../widgets/cadence_scaffold.dart';
+import '../../widgets/Zenova_scaffold.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/song_actions_sheet.dart';
 import '../../widgets/song_tile.dart';
@@ -16,7 +16,7 @@ class FavoritesScreen extends StatelessWidget {
     final library = context.watch<LibraryProvider>();
     final favorites = library.favorites;
 
-    return CadenceScaffold(
+    return ZenovaScaffold(
       appBar: AppBar(title: const Text('Favorites')),
       body: favorites.isEmpty
           ? const EmptyState(icon: Icons.favorite_border_rounded, title: 'No favorites yet', message: 'Tap the heart on any song to add it here.')

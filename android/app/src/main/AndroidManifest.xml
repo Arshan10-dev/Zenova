@@ -16,14 +16,14 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <!-- ============ Google Fonts (Sora / Inter) one-time CDN fetch ============ -->
-    <!-- Cadence is otherwise fully offline. See README "Fully offline typography"
+    <!-- Zenova is otherwise fully offline. See README "Fully offline typography"
          if you'd rather bundle the .ttf files locally and drop these two lines. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name="${applicationName}"
-        android:label="Cadence"
+        android:label="Zenova"
         android:icon="@mipmap/ic_launcher"
         android:enableOnBackInvokedCallback="true"
         android:allowBackup="true"

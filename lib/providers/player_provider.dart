@@ -12,7 +12,7 @@ import '../repository/song_repository.dart';
 import '../services/audio_handler.dart';
 
 class PlayerProvider extends ChangeNotifier {
-  final CadenceAudioHandler audioHandler;
+  final ZenovaAudioHandler audioHandler;
   final SongRepository _songRepository;
   final HistoryRepository _historyRepository;
   final SettingsRepository _settings;

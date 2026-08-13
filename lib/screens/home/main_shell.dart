@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../providers/library_provider.dart';
 import '../../providers/player_provider.dart';
-import '../../widgets/cadence_scaffold.dart';
+import '../../widgets/Zenova_scaffold.dart';
 import '../albums/albums_screen.dart';
 import '../artists/artists_screen.dart';
 import '../settings/settings_screen.dart';
@@ -59,7 +59,7 @@ class _MainShellState extends State<MainShell> {
 
   @override
   Widget build(BuildContext context) {
-    return CadenceScaffold(
+    return ZenovaScaffold(
       body: IndexedStack(index: _index, children: _screens),
       bottomNavBar: NavigationBar(
         selectedIndex: _index,

@@ -5,7 +5,7 @@ import 'package:flutter/animation.dart';
 class AppConstants {
   AppConstants._();
 
-  static const String appName = 'Cadence';
+  static const String appName = 'Zenova';
 
   // --- Hive box names ---
   static const String songsBox = 'songs_box';

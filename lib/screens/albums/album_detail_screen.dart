@@ -6,7 +6,7 @@ import '../../core/utils/formatters.dart';
 import '../../providers/library_provider.dart';
 import '../../providers/player_provider.dart';
 import '../../widgets/album_art.dart';
-import '../../widgets/cadence_scaffold.dart';
+import '../../widgets/Zenova_scaffold.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/song_actions_sheet.dart';
 import '../../widgets/song_tile.dart';
@@ -22,10 +22,10 @@ class AlbumDetailScreen extends StatelessWidget {
     final theme = Theme.of(context);
 
     if (album == null) {
-      return const CadenceScaffold(body: EmptyState(icon: Icons.album_outlined, title: 'Album not found', message: ''));
+      return const ZenovaScaffold(body: EmptyState(icon: Icons.album_outlined, title: 'Album not found', message: ''));
     }
 
-    return CadenceScaffold(
+    return ZenovaScaffold(
       body: CustomScrollView(
         slivers: [
           SliverAppBar(

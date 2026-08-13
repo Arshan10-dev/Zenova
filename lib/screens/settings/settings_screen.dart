@@ -58,7 +58,7 @@ class SettingsScreen extends StatelessWidget {
           _SectionLabel('About'),
           ListTile(
             leading: const Icon(Icons.info_outline_rounded),
-            title: const Text('About Cadence'),
+            title: const Text('About Zenova'),
             onTap: () => _showAboutSheet(context),
           ),
           ListTile(
@@ -94,7 +94,7 @@ class SettingsScreen extends StatelessWidget {
                   child: const Icon(Icons.graphic_eq_rounded, color: AppColors.ember, size: 30),
                 ),
                 const SizedBox(height: 16),
-                Text('Cadence', style: theme.textTheme.titleLarge),
+                Text('Zenova', style: theme.textTheme.titleLarge),
                 const SizedBox(height: 4),
                 Text('Version $_appVersion', style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
                 const SizedBox(height: 16),
@@ -127,9 +127,9 @@ class SettingsScreen extends StatelessWidget {
                 Text('Privacy Policy', style: theme.textTheme.titleLarge),
                 const SizedBox(height: 16),
                 Text(
-                  'Cadence is an offline music player. Your song library, playlists, favorites, and listening '
+                  'Zenova is an offline music player. Your song library, playlists, favorites, and listening '
                   'history are stored only on this device and are never uploaded or shared.\n\n'
-                  'Cadence requests permission to read audio files so it can build your library, and a '
+                  'Zenova requests permission to read audio files so it can build your library, and a '
                   'notification permission so playback controls can appear while the app is in the background. '
                   'Neither permission is used to access anything beyond what\'s needed for playback.\n\n'
                   'This screen is a starting template — replace it with your own policy before publishing.',

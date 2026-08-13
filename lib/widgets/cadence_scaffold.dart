@@ -5,7 +5,7 @@ import '../providers/player_provider.dart';
 import '../screens/now_playing/now_playing_screen.dart';
 import 'mini_player.dart';
 
-class CadenceScaffold extends StatelessWidget {
+class ZenovaScaffold extends StatelessWidget {
   final PreferredSizeWidget? appBar;
   final Widget body;
   final Widget? floatingActionButton;
@@ -13,7 +13,7 @@ class CadenceScaffold extends StatelessWidget {
   final bool showMiniPlayer;
   final Color? backgroundColor;
 
-  const CadenceScaffold({
+  const ZenovaScaffold({
     super.key,
     this.appBar,
     required this.body,
