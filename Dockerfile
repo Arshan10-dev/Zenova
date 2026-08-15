@@ -1,14 +1,14 @@
-# Build Flutter web app
 FROM ghcr.io/cirruslabs/flutter:stable AS build
 
 WORKDIR /app
 
 COPY . .
 
+RUN flutter config --enable-web
+RUN flutter precache --web
 RUN flutter pub get
 RUN flutter build web --release
 
-# Serve with nginx
 FROM nginx:alpine
 
 COPY --from=build /app/build/web /usr/share/nginx/html
